@@ -1,5 +1,10 @@
 /bootstrap/compiled.php
 /vendor
+/node_modules
+/themes/demo-bkp
+/themes/demo/assets/css-bkp
+/themes/demo/assets/mix-manifest.json
+/public
 composer.phar
 .DS_Store
 .idea

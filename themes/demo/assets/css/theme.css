@@ -1,28 +1,28 @@
 @font-face {
   font-family: 'lato';
-  src: url('../fonts/lato-black-webfont.eot');
-  src: url('../fonts/lato-black-webfont.eot?#iefix') format('embedded-opentype'), url('../fonts/lato-black-webfont.svg#latoblack') format('svg'), url('../fonts/lato-black-webfont.woff') format('woff'), url('../fonts/lato-black-webfont.ttf') format('truetype');
+  src: url(/fonts/lato-black-webfont.eot?d2231c2def08cdfd54af174ce0eb2288);
+  src: url(/fonts/lato-black-webfont.eot?d2231c2def08cdfd54af174ce0eb2288?#iefix) format('embedded-opentype'), url(/fonts/lato-black-webfont.svg?6ac4e5d8bff9d137ea72ee28428063e8#latoblack) format('svg'), url(/fonts/lato-black-webfont.woff?48aadb3fd6bcb8da876421aa8b63d33c) format('woff'), url(/fonts/lato-black-webfont.ttf?c9d3195f45ba1fadbc2103219a22f108) format('truetype');
   font-weight: 700;
   font-style: normal;
 }
 @font-face {
   font-family: 'lato';
-  src: url('../fonts/lato-italic-webfont.eot');
-  src: url('../fonts/lato-italic-webfont.eot?#iefix') format('embedded-opentype'), url('../fonts/lato-italic-webfont.svg#latoitalic') format('svg'), url('../fonts/lato-italic-webfont.woff') format('woff'), url('../fonts/lato-italic-webfont.ttf') format('truetype');
+  src: url(/fonts/lato-italic-webfont.eot?2744eea7833bd7423756322a2b732f85);
+  src: url(/fonts/lato-italic-webfont.eot?2744eea7833bd7423756322a2b732f85?#iefix) format('embedded-opentype'), url(/fonts/lato-italic-webfont.svg?0be6cba802dce9127718f89cb73d5da6#latoitalic) format('svg'), url(/fonts/lato-italic-webfont.woff?6cab80e36064b5e62e8453db8ede931b) format('woff'), url(/fonts/lato-italic-webfont.ttf?fc794f67d25bff90d703d808688ccd74) format('truetype');
   font-weight: 400;
   font-style: italic;
 }
 @font-face {
   font-family: 'lato';
-  src: url('../fonts/lato-regular-webfont.eot');
-  src: url('../fonts/lato-regular-webfont.eot?#iefix') format('embedded-opentype'), url('../fonts/lato-regular-webfont.svg#latoregular') format('svg'), url('../fonts/lato-regular-webfont.woff') format('woff'), url('../fonts/lato-regular-webfont.ttf') format('truetype');
+  src: url(/fonts/lato-regular-webfont.eot?17acaf64cf85ec754373f50847cd6193);
+  src: url(/fonts/lato-regular-webfont.eot?17acaf64cf85ec754373f50847cd6193?#iefix) format('embedded-opentype'), url(/fonts/lato-regular-webfont.svg?2b6dde3f50d852d83707e4ddfb9ee2f3#latoregular) format('svg'), url(/fonts/lato-regular-webfont.woff?a375a68b634abf33fb3afd5e3cb45699) format('woff'), url(/fonts/lato-regular-webfont.ttf?dceabf7113654cd3ceb2a374db4f75f4) format('truetype');
   font-weight: 400;
   font-style: normal;
 }
 @font-face {
   font-family: 'lato';
-  src: url('../fonts/lato-light-webfont.eot');
-  src: url('../fonts/lato-light-webfont.eot?#iefix') format('embedded-opentype'), url('../fonts/lato-light-webfont.svg#latolight') format('svg'), url('../fonts/lato-light-webfont.woff') format('woff'), url('../fonts/lato-light-webfont.ttf') format('truetype');
+  src: url(/fonts/lato-light-webfont.eot?7f5553793fb07e473f79d8dbdc264e9f);
+  src: url(/fonts/lato-light-webfont.eot?7f5553793fb07e473f79d8dbdc264e9f?#iefix) format('embedded-opentype'), url(/fonts/lato-light-webfont.svg?ef1fd349e86edb64b7f15affe218c435#latolight) format('svg'), url(/fonts/lato-light-webfont.woff?443b8eb2a6d91c16d1be400e6f143813) format('woff'), url(/fonts/lato-light-webfont.ttf?397b72c03308d4b9c5c63b0f0a9e5627) format('truetype');
   font-weight: 300;
   font-style: normal;
 }
@@ -392,10 +392,11 @@
 }
 .navbar-header .navbar-brand {
   padding-left: 55px;
-  background-image: url('../images/october.png');
+  background-image: url(/images/october.png?1d585ccf71e2eb73f03bcf484cfc2259);
   background-size: auto 60%;
   background-repeat: no-repeat;
   background-position: 7px 50%;
+  -webkit-transition: color 0.2s ease 0.05s;
   transition: color 0.2s ease 0.05s;
   color: #ccc;
 }
@@ -409,12 +410,17 @@
   margin: 20px 10px 0 10px;
 }
 .navbar-autohide {
-  transition: transform .5s;
+  -webkit-transition: -webkit-transform 0.5s;
+  transition: -webkit-transform 0.5s;
+  transition: transform 0.5s;
+  transition: transform 0.5s, -webkit-transform 0.5s;
 }
 .navbar-autohide.is-hidden {
-  transform: translateY(-72px);
+  -webkit-transform: translateY(-72px);
+          transform: translateY(-72px);
 }
 .navbar-collapse:not(.in):not(.collapsing) .navbar-nav li > a {
+  -webkit-transition: color 0.2s ease 0.05s;
   transition: color 0.2s ease 0.05s;
 }
 .navbar-collapse:not(.in):not(.collapsing) .navbar-nav li > a:after {
@@ -426,6 +432,7 @@
   z-index: 5;
   width: 0;
   left: 50%;
+  -webkit-transition: all 0.2s ease 0.05s;
   transition: all 0.2s ease 0.05s;
 }
 .navbar-collapse:not(.in):not(.collapsing) .navbar-nav li.active > a:after {
@@ -441,10 +448,10 @@
 }
 .navbar-inverse .navbar-collapse:not(.in):not(.collapsing) .navbar-nav li.active > a:after,
 .navbar-inverse .navbar-collapse:not(.in):not(.collapsing) .navbar-nav li > a:hover:after {
-  background: #000000;
+  background: #000;
 }
 .navbar-inverse .navbar-collapse:not(.in):not(.collapsing) .navbar-nav li.active > a:hover:after {
-  background: #000000;
+  background: #000;
 }
 .navbar-inverse .navbar-collapse:not(.in):not(.collapsing) .navbar-nav li > a:hover:after {
   background: #e67e22;
