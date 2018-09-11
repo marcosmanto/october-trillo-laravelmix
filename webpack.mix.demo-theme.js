@@ -11,24 +11,26 @@ let mix = require('laravel-mix');
  |
  */
 
-mix.setPublicPath('./themes/trillo/assets/');
+mix.setPublicPath('./themes/demo/assets/');
 
-mix
-   //.js('./themes/trillo/assets/javascript/app.js', 'js')
-   .sass('./themes/trillo/assets/sass/main.scss', 'css/style.css')
+// mix.js('src/app.js', 'dist/').sass('src/app.scss', 'dist/');
+
+mix.js('./themes/demo/assets/javascript/app.js', 'js')
+   .less('./themes/demo/assets/less/vendor.less', 'css')
+   .less('./themes/demo/assets/less/theme.less', 'css')
    ;
    
-// mix.options({
-//   processCssUrls: false, // Process/optimize relative stylesheet url()'s. Set to false, if you don't want them touched.
-// });
+mix.options({
+  processCssUrls: false, // Process/optimize relative stylesheet url()'s. Set to false, if you don't want them touched.
+});
 
 mix.browserSync({
   proxy: 'october.test',
   notify: false,
   files: [
-    './themes/trillo/**/*.htm',
-    './themes/trillo/assets/css/*',
-    './themes/trillo/assets/js/*',
+    './themes/demo/**/*.htm',
+    './themes/demo/assets/css/*',
+    './themes/demo/assets/js/*',
   ]
 });
 
