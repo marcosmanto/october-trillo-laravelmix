@@ -20,7 +20,20 @@ mix.js('./themes/demo/assets/javascript/app.js', 'js')
    .less('./themes/demo/assets/less/theme.less', 'css')
    ;
    
-   
+mix.options({
+  processCssUrls: false, // Process/optimize relative stylesheet url()'s. Set to false, if you don't want them touched.
+});
+
+mix.browserSync({
+  proxy: 'october.test',
+  notify: false,
+  files: [
+    './themes/demo/**/*.htm',
+    './themes/demo/assets/css/*',
+    './themes/demo/assets/js/*',
+  ]
+});
+
 mix.disableNotifications();
 
 // Full API
