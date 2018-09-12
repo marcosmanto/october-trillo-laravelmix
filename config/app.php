@@ -41,7 +41,7 @@ return [
     |
     */
 
-    'url' => 'october.test',
+    'url' => 'localhost:8080/trillo',
 
     /*
     |--------------------------------------------------------------------------
@@ -93,7 +93,7 @@ return [
     |
     */
 
-    'key' => 'dZPEl1W5vXgTyyz7EEWnr43CkH2AiN41',
+    'key' => '7k9mnDy6NCXywpLXUBldCofYS9Cih0lS',
 
     'cipher' => 'AES-256-CBC',
 

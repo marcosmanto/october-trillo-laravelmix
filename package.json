@@ -20,5 +20,8 @@
     "laravel-mix": "^2.1.14",
     "less": "^3.8.1",
     "less-loader": "^4.1.0"
+  },
+  "dependencies": {
+    "npm": "^6.4.1"
   }
 }
