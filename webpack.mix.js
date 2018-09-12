@@ -18,9 +18,9 @@ mix
    .sass('./themes/trillo/assets/sass/main.scss', 'css/style.css')
    ;
    
-// mix.options({
-//   processCssUrls: false, // Process/optimize relative stylesheet url()'s. Set to false, if you don't want them touched.
-// });
+mix.options({
+  processCssUrls: false, // Process/optimize relative stylesheet url()'s. Set to false, if you don't want them touched.
+});
 
 mix.browserSync({
   proxy: 'http://localhost:8080/trillo/',
