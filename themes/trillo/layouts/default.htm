@@ -49,10 +49,50 @@ description = "Default layout"
         </div>
       </nav>
     </header>
+
     <div class="content">
+
       <nav class="sidebar">
-        Navigation
+        <ul class="side-nav">
+          <li class="side-nav__item side-nav__item--active">
+            <a href="#" class="side-nav__link">
+              <svg class="side-nav__icon">
+                <use xlink:href="{{ "assets/images/sprite.svg#icon-home"|theme }}"></use>
+              </svg>
+              <span>Hotel</span>
+            </a>
+          </li>
+          <li class="side-nav__item">
+            <a href="#" class="side-nav__link">
+              <svg class="side-nav__icon">
+                <use xlink:href="{{ "assets/images/sprite.svg#icon-aircraft-take-off"|theme }}"></use>
+              </svg>
+              <span>Flight</span>
+            </a>
+          </li>
+          <li class="side-nav__item">
+            <a href="#" class="side-nav__link">
+              <svg class="side-nav__icon">
+                <use xlink:href="{{ "assets/images/sprite.svg#icon-key"|theme }}"></use>
+              </svg>
+              <span>Car rental</span>
+            </a>
+          </li>
+          <li class="side-nav__item">
+            <a href="#" class="side-nav__link">
+              <svg class="side-nav__icon">
+                <use xlink:href="{{ "assets/images/sprite.svg#icon-map"|theme }}"></use>
+              </svg>
+              <span>Tours</span>
+            </a>
+          </li>
+        </ul>
+
+        <div class="legal">
+          &copy; 2018 by trillo. All rights reserved.
+        </div>
       </nav>
+
       <main class="hotel-view">
         Hotel View
       </main>
