@@ -23,7 +23,7 @@ mix
 // });
 
 mix.browserSync({
-  proxy: 'october.test',
+  proxy: 'http://localhost:8080/trillo/',
   notify: false,
   files: [
     './themes/trillo/**/*.htm',
