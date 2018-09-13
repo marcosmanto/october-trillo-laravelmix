@@ -4,6 +4,9 @@
   background-color: var(--color-grey-light-1)
   box-shadow: var(--shadow-dark)
   min-height: 20vh
+  @media only screen and (max-width: $bp-largest)
+    margin: 0
+    max-width: unset
 
 .header
   svg
@@ -15,11 +18,17 @@
   display: flex
   justify-content: space-between
   align-items: center
+  @media only screen and (max-width: $bp-smallest)
+    flex-wrap: wrap
+    height: 11rem
+    align-content: space-around
   // > *
   //   flex: 0
 
 .content
   display: flex
+  @media only screen and (max-width: $bp-medium)
+    flex-direction: column
 
 .sidebar
   background-color: var(--color-grey-dark-1)
@@ -38,12 +47,24 @@
   padding: 4.5rem
   background-color: var(--color-grey-light-1)
   border-bottom: var(--line)
+  @media only screen and (max-width: $bp-medium)
+    padding: 3rem
+  @media only screen and (max-width: $bp-small)
+    flex-direction: column
+
 .description
   flex: 0 0 60%
   box-shadow: var(--shadow-light)
   padding: 3rem
   margin-right: 4.5rem
   background-color: white
+  @media only screen and (max-width: $bp-medium)
+    padding: 2rem
+    margin-right: 3rem
+  @media only screen and (max-width: $bp-small)
+    margin-right: 0
+    margin-bottom: 3rem
+
 .user-reviews
   flex: 1
   display: flex
