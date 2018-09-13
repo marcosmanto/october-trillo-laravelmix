@@ -201,7 +201,7 @@
       text-transform: uppercase
 
 /////////////////////////////////
-// OVERVIEW
+// BUTTON INLINE
 .btn-inline
   border: none
   color: var(--color-primary)
@@ -212,7 +212,12 @@
   background-color: transparent
   cursor: pointer
   transition: all .2s
+  span
+    margin-left: 3px
+    transition: margin-left .2s
   &:hover
+    span
+      margin-left: 8px
     color: var(--color-grey-dark-1)
   &:focus
     outline: none
@@ -283,3 +288,49 @@
     border: 3px solid white 
     &:not(:last-child)
       margin-right: -1.5rem
+
+/////////////////////////////////
+// REVIEWS
+.review
+  background-color: #fff
+  box-shadow: var(--shadow-light)
+  padding: 3rem
+  margin-bottom: 3.5rem
+  position: relative
+  overflow: hidden
+  &::before
+    content: "\201C"
+    z-index: 1
+    top: -2.75rem
+    left: -1rem
+    line-height: 1
+    font-size: 20rem
+    font-family: sans-serif
+    color: var(--color-grey-light-2)
+    position: absolute
+  &__text
+    z-index: 10
+    position: relative
+    margin-bottom: 2rem
+  &__user
+    display: flex
+    align-items: center
+  &__photo
+    height: 4.5rem
+    width: 4.5rem
+    border-radius: 50%
+  &__user-box
+    margin-left: 1.5rem
+    margin-right: auto
+  &__user-name
+    font-size: 1.1rem
+    font-weight: 600
+    text-transform: uppercase
+    margin-bottom: .4rem
+  &__user-date
+    font-size: 1rem
+    color: var(--color-grey-dark-3)
+  &__user-rating
+    color: var(--color-primary)
+    font-size: 2.2rem
+    font-weight: 300
