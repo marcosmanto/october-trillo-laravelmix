@@ -15,7 +15,9 @@ mix.setPublicPath('./themes/trillo/assets/');
 
 mix
    //.js('./themes/trillo/assets/javascript/app.js', 'js')
+   .sass('./themes/trillo/assets/sass-nexter/main.sass', 'css/nexter.css')
    .sass('./themes/trillo/assets/sass/main.scss', 'css/style.css')
+   .sass('./themes/trillo/assets/sass/test.sass', 'css/test.css')
    ;
    
 mix.options({
