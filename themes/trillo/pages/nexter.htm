@@ -4,26 +4,74 @@ is_hidden = 0
 ==
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta http-equiv="X-UA-Compatible" content="ie=edge">
-        
-        <link href="https://fonts.googleapis.com/css?family=Josefin+Sans:300,400,400i|Nunito:300,300i" rel="stylesheet">
-        <link rel="stylesheet" href="{{ 'assets/css/nexter.css'|theme }}">
-        <link rel="shortcut icon" type="image/png" href="{{ 'assets/images/favicon.png'|theme }}">
-        
-        <title>nexter &mdash; your home, your freedom</title>
-    </head>
-    <body class="container">
-        <div class="sidebar">Sidebar</div> 
-        <div class="header">Header</div>
-        <div class="realtors">Realtors</div>
-        <section class="features">Features</section>
-        <div class="story__pictures">Story pictures</div>
-        <div class="story__content">Story content</div>
-        <section class="homes">Homes</section>
-        <section class="gallery">Gallery</section>
-        <footer class="footer">Footer</footer>
-    </body>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+  <link href="https://fonts.googleapis.com/css?family=Josefin+Sans:300,400,400i|Nunito:300,300i" rel="stylesheet">
+  <link rel="stylesheet" href="{{ 'assets/css/nexter.css'|theme }}">
+  <link rel="shortcut icon" type="image/png" href="{{ 'assets/images/favicon.png'|theme }}">
+
+  <title>nexter &mdash; your home, your freedom</title>
+</head>
+
+<body class="container">
+  <div class="sidebar">Sidebar</div>
+  <div class="header">Header</div>
+  <div class="realtors">Realtors</div>
+
+  <section class="features">
+    <div class="feature">
+      <svg class="feature__icon">
+        <use xlink:href="{{ 'assets/images/sprite.svg#icon-global'|theme }}"></use>
+      </svg>
+      <h4 class="heading-4">World's best luxury home</h4>
+      <p class="feature__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates provident tempore molestias et unde quos veritatis ad voluptas a quasi!</p>
+    </div>
+    <div class="feature">
+      <svg class="feature__icon">
+        <use xlink:href="{{ 'assets/images/sprite.svg#icon-trophy'|theme }}"></use>
+      </svg>
+      <h4 class="heading-4 heading-4--dark">Only the best properties</h4>
+      <p class="feature__text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dicta corrupti amet sint tempore!</p>
+    </div>
+    <div class="feature">
+      <svg class="feature__icon">
+        <use xlink:href="{{ 'assets/images/sprite.svg#icon-map-pin'|theme }}"></use>
+      </svg>
+      <h4 class="heading-4 heading-4--dark">All homes in top locations</h4>
+      <p class="feature__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perferendis, ipsam!</p>
+    </div>
+    <div class="feature">
+      <svg class="feature__icon">
+        <use xlink:href="{{ 'assets/images/sprite.svg#icon-key'|theme }}"></use>
+      </svg>
+      <h4 class="heading-4 heading-4--dark">New home in one week</h4>
+      <p class="feature__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perferendis, ipsam!</p>
+    </div>
+    <div class="feature">
+      <svg class="feature__icon">
+        <use xlink:href="{{ 'assets/images/sprite.svg#icon-presentation'|theme }}"></use>
+      </svg>
+      <h4 class="heading-4 heading-4--dark">Top 1% realtors</h4>
+      <p class="feature__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa quibusdam rerum incidunt, eius sint dolor!</p>
+    </div>
+    <div class="feature">
+      <svg class="feature__icon">
+        <use xlink:href="{{ 'assets/images/sprite.svg#icon-lock'|theme }}"></use>
+      </svg>
+      <h4 class="heading-4 heading-4--dark">Secure payments on nexter</h4>
+      <p class="feature__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa quibusdam rerum incidunt, eius sint dolor!</p>
+    </div>
+  </section>
+
+  <div class="story__pictures">Story pictures</div>
+  <div class="story__content">Story content</div>
+  <section class="homes">Homes</section>
+  <section class="gallery">Gallery</section>
+  <footer class="footer">Footer</footer>
+</body>
+
 </html>
