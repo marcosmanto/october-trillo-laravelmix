@@ -1,0 +1,11 @@
+plugin:
+    name: 'marcosmanto.tasks::lang.plugin.name'
+    description: 'marcosmanto.tasks::lang.plugin.description'
+    author: 'Marcos Mantovani'
+    icon: oc-icon-tasks
+    homepage: ''
+navigation:
+    main-menu-item:
+        label: Tasks
+        url: marcosmanto/tasks/cities
+        icon: icon-tasks

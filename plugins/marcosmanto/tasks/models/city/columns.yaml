@@ -1,0 +1,11 @@
+columns:
+    name:
+        label: Nome
+        type: text
+        searchable: true
+        sortable: true
+    state:
+        label: Estado
+        type: number
+        select: name
+        relation: state

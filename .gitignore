@@ -20,6 +20,8 @@ php-errors.log
 sftp-config.json
 selenium.php
 composer.lock
+/plugins/bedard
+# !/plugins/bedard/debugbar/vendor/barryvdh/laravel-debugbar/config/**
 
 # for netbeans
 nbproject

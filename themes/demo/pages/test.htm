@@ -1,0 +1,48 @@
+title = "Test Page"
+url = "/test"
+layout = "default"
+==
+<?php
+function onStart(){
+
+
+  $printRow = function($value, $key, $color)
+  {
+    echo "<tr>\n<td bgcolor=\"{$color}\">{$value}</td>";
+    echo "<td bgcolor=\"{$color}\">{$key}</td>\n</tr>\n";
+  };
+
+  $person = array('name' => "Fred", 'age' => 35, 'wife' => "Wilma");
+
+  echo "<table border=\"1\">";
+  array_walk($person, $printRow, "lightblue");
+  echo "</table>";;
+
+}
+?>
+==
+<div class="jumbotron title-js">
+    <div class="container">
+        <div class="row">
+            <div class="col-8">
+                <h1>Test Page</h1>
+                <p>Testing code.</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="container">
+    <div class="panel panel-default">
+        <div class="panel-heading">
+            <h3 class="panel-title">Calculator</h3>
+        </div>
+        <div class="panel-body">
+            
+        </div>
+        <div class="panel-footer" id="result">
+            
+        </div>
+    </div>
+
+</div>

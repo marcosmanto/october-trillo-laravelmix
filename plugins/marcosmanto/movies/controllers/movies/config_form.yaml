@@ -1,0 +1,10 @@
+name: Movies
+form: $/marcosmanto/movies/models/movie/fields.yaml
+modelClass: marcosmanto\Movies\Models\Movie
+defaultRedirect: marcosmanto/movies/movies
+create:
+    redirect: 'marcosmanto/movies/movies/update/:id'
+    redirectClose: marcosmanto/movies/movies
+update:
+    redirect: marcosmanto/movies/movies
+    redirectClose: marcosmanto/movies/movies

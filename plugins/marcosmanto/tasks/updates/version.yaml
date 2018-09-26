@@ -1,0 +1,14 @@
+1.0.1:
+    - 'Initialize plugin.'
+1.0.2:
+    - 'Created table marcosmanto_tasks_states'
+    - builder_table_create_marcosmanto_tasks_states.php
+1.0.3:
+    - 'Seed states table'
+    - builder_table_create_marcosmanto_tasks_states_seed.php
+1.0.4:
+    - 'Created table marcosmanto_tasks_cities'
+    - builder_table_create_marcosmanto_tasks_cities.php
+1.0.5:
+    - 'Seed cities table'
+    - builder_table_create_marcosmanto_tasks_cities_seed.php

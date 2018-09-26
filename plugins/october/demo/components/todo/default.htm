@@ -1,5 +1,5 @@
 <form
-    data-request="{{ __SELF__ }}::onAddItem"
+    onsubmit="$(this).request('onAddItem'); return false;"
     data-request-update="'{{ __SELF__ }}::list': '#result'"
     data-request-success="$('#input-item').val('')"
     data-request-flash>
@@ -19,3 +19,43 @@
         </ul>
     </div>
 </form>
+{#
+{{ tchau_querida() }}
+
+
+  {% for icon in icon_list() %}
+    {{ icon[1] }}
+  {% endfor %}
+#}
+{% for item in __SELF__.states() %}
+  {{ item }}
+{% endfor %}
+<br>
+ID: {{ __SELF__.id }}
+
+<!-- data-request="{{ __SELF__ }}::onAddItem" -->
+{% put scripts %}
+  <script>
+    $('form').request('onAddItem',{
+      confirm: 'Are you sure?',
+      data: {
+        'newItem': 'abc'
+      },
+      success: function(data){
+        console.log('OK');
+        this.success(data).done(function(){
+          console.log('Rendered partial');
+        });
+      }
+    });
+
+    $(window).on('ajaxUpdateComplete', function(){
+      console.log('Ajax Update Complete');
+      $.oc.flashMsg({ text: 'Item adicionado', class: 'info' })
+    })
+
+    $(window).on('ajaxConfirmMessage',function(){
+      console.log('Confirm message');
+    })
+  </script>
+{% endput %}

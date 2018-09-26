@@ -1,0 +1,6 @@
+columns:
+    name:
+        label: 'marcosmanto.movies::lang.plugin.name'
+        type: text
+        searchable: true
+        sortable: true

@@ -1,0 +1,11 @@
+plugin:
+    name: 'marcosmanto.movies::lang.plugin.name'
+    description: 'marcosmanto.movies::lang.plugin.description'
+    author: 'Marcos Mantovani'
+    icon: oc-icon-video-camera
+    homepage: ''
+navigation:
+    main-menu-item:
+        label: Movies
+        url: marcosmanto/movies/movies
+        icon: icon-film

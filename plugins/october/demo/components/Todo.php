@@ -1,11 +1,15 @@
 <?php namespace October\Demo\Components;
 
 use Cms\Classes\ComponentBase;
+use Marcosmanto\Tasks\Models\State;
 use ApplicationException;
+use Backend\Models\User;
+use Response;
+use Rainlab\Builder\Models\Settings;
+use Lang;
 
 class Todo extends ComponentBase
 {
-
     public function componentDetails()
     {
         return [
@@ -41,5 +45,21 @@ class Todo extends ComponentBase
         }
 
         $this->page['items'] = $items;
+    }
+
+    public function states()
+    {
+        $results = State::where('id', 21)->lists('name', 'id');
+        //dd($results->toSql());
+        return $results;
+    }
+
+    public function onRun(){
+      // dd(Lang::get('october.demo::lang.app.name'));
+      // Settings::set('api_key', 'ABCD');
+      // dd(Settings::get('author_name'));
+      // $content = $this->renderPartial('@test.htm');
+      // return Response::make($content)->header('Content-type', 'text/xml');
+      // return User::all();
     }
 }
